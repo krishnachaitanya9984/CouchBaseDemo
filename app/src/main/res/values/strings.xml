@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CouchBaseDemo</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Couchbase Demo</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="previous">Previous</string>
+
+    <string name="items">0</string>
+</resources>
