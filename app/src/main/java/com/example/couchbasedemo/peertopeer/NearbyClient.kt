@@ -70,7 +70,7 @@ class NearbyClient(private val context: Context) {
                     Log.d("NearbyClient", "Connected to: $endpointId")
                     //sendDatabase(endpointId)
                     ioScope.launch {
-                        PassivePeer.startListener(
+                        ActivePeer.startReplicator(
                             CouchBaseLiteService.database!!,
                             endpointId,
                             connectionsClient

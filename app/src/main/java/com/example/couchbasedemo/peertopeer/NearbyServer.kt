@@ -42,7 +42,7 @@ class NearbyServer(private val context: Context) {
             if (result.status.isSuccess) {
                 Log.d(TAG, "Connected to: $endpointId")
                 ioScope.launch {
-                    ActivePeer.startReplicator(
+                    PassivePeer.startListener(
                         CouchBaseLiteService.database!!,
                         endpointId,
                         connectionsClient
